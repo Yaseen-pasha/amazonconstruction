@@ -1,9 +1,12 @@
 import React from 'react';
 import Plan from './Plan';
-import Navbar from "./Navbar"
+import Navbar from "../Main/Navbar"
 import Sponsers from './Sponsers';
-import Auto from './Auto';
-import Loader from './Loader';
+import Auto from '../Main/Auto';
+import Loader from '../Main/Loader';
+import Plandata from './Plandata';
+import Sponsersdata from './Sponsersdata';
+
 const Home = () => {
   return (<>
   <Loader/>
@@ -41,57 +44,47 @@ const Home = () => {
             </div>
         </div>
       </section>
-    <Plan 
+    {/* <Plan 
         city="--PROJECTS IN TUMKUR--"
-        imgsrc1 = {"images/new1.jpg"} 
-        imgsrc2 = {"images/new2.jpg"} 
-        imgsrc3 = {"images/new6.jpg"} 
-        imgsrc4 = {"images/new14.jpg"}
-    />
-    <Plan 
-        city="--PROJECTS IN MANGALORE--"
-        imgsrc1 = {"images/new12.jpg"} 
-        imgsrc2 = {"images/new11.jpg"} 
-        imgsrc3 = {"images/new3.jpg"} 
-        imgsrc4 = {"images/new90.jpg"}
-    />
-    <Plan 
-        city="--PROJECTS IN BANGALORE--"
-        imgsrc1 = {"images/new16.jpg"} 
-        imgsrc2 = {"images/new76.jpg"} 
-        imgsrc3 = {"images/new8.jpg"} 
-        imgsrc4 = {"images/new75.jpg"}
-    />
-    <Plan 
-        city="--SECTIONS--"
-        imgsrc1 = {"images/new60.jpg"} 
-        imgsrc2 = {"images/new55.png"} 
-        imgsrc3 = {"images/new81.jpg"} 
-        imgsrc4 = {"images/new70.jpg"}
-    />
+        imgsrc1 = {Plandata[0].imgsrc1} 
+        imgsrc2 = {Plandata[0].imgsrc2}
+    /> */}
+
+    {
+        Plandata.map((data)=>{
+            return(
+                <Plan 
+                key = {data.id}
+                city = {data.city} 
+                imgsrc1 = {data.imgsrc1}  
+                imgsrc2 = {data.imgsrc2}  
+                imgsrc3 = {data.imgsrc3}  
+                imgsrc4 = {data.imgsrc4} 
+                />
+            )
+        })
+    }
+
+
+
 <hr/>
     
     <section id="client">
         <h2 class="h-secondary center">Our Social Links</h2>
         <div class="sponsors">
-    <Sponsers
-        social="https://www.instagram.com/yaseen07_/"
-        logo="social"
-        imgsrc="images/insta.png"
-        alt="Instagram"
-    />
-    <Sponsers
-        social="https://www.facebook.com/100019487475399"
-        logo="social"
-        imgsrc="images/facebook.png"
-        alt="FAcebookr"
-    />
-    <Sponsers
-        social=" https://twitter.com/yaseen07_/"
-        logo="social"
-        imgsrc="images/twitter.png"
-        alt="Twitter"
-    />
+
+        {
+            Sponsersdata.map((data)=>{
+                return(
+                    <Sponsers
+                    key={data.id}
+                    social={data.social}
+                    imgsrc={data.imgsrc}
+                    alt={data.alt}
+                    />
+                )
+            })
+        }
         </div>
     </section>
   </>);

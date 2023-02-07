@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Auto from './Auto';
+import Navbar from '../Main/Navbar';
+import Auto from '../Main/Auto';
 const About = () => {
   return (<>
    <section className="sub-header1">

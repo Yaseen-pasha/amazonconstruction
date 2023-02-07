@@ -1,7 +1,8 @@
 import React, {useState}from 'react';
-import Navbar from './Navbar';
-import Auto from './Auto';
+import Navbar from '../Main/Navbar';
+import Auto from '../Main/Auto';
 import Cons from './Cons';
+import Consdata from './Consdata';
 import { Redirect } from 'react-router';
 
 const Contact = () => {
@@ -57,30 +58,28 @@ const Contact = () => {
   </section>
     <section className="contact">
         <div className="row">
-          <Cons
-            imgsrc ={"images/home.svg"}
-            alt="address"
-            mob="The Amazon Tower"
-            park="Amazon lake road Tumkur"
-          />
-          <Cons
-            imgsrc ={"images/phone.svg"}
-            alt="address"
-            mob="+918310XXXXXX"
-            park="Monday to Friday, 10AM to 4PM"
-          />
-          <Cons
-            imgsrc ={"images/envelope.svg"}
-            alt="Email"
-            mob="yaseen@amazonconstruction.com"
-            park="Email us to query"
-          />
+
+
+        {
+          Consdata.map((data)=>{
+            return(
+              <Cons
+              key={data.id}
+              imgsrc ={data.imgsrc}
+              alt={data.alt}
+              mob={data.mob}
+              park={data.park}
+              />
+            )
+          })
+        }
         </div>
         <div className="map">
             <p className="city center">--LOCATION--</p>
             <iframe title="myFrame"
                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13343.881595811778!2d77.10404901147409!3d13.346846934994867!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1638587418428!5m2!1sen!2sin"
-                width="600" height="450" style={{border:0}}allowFullScreen="" loading="lazy"></iframe>
+                width="600" height="450" style={{border:0}}allowFullScreen="" loading="lazy">
+            </iframe>
         </div>
     </section>
     <hr/>
