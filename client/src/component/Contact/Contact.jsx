@@ -3,7 +3,6 @@ import Navbar from '../Main/Navbar';
 import Auto from '../Main/Auto';
 import Cons from './Cons';
 import Consdata from './Consdata';
-import { Redirect } from 'react-router';
 
 const Contact = () => {
   const [user, setUser] = useState({
@@ -47,7 +46,7 @@ const Contact = () => {
     nav="navbar h-nav"
   />
   <div className="txtsub-container">
-      <h1 className="h-primary center">--CONTACT US--</h1>
+      <h1 className="h-primary center">CONTACT US</h1>
       <div className="main1 center">
       <Auto
         name1="One Of The Top Leading Enginering Construction in  2022."
@@ -86,7 +85,7 @@ const Contact = () => {
     <section className="cont-col2">
         <div className="render">
             <div className="thumb">
-                <h3 className="nap center">----CONTACT----</h3>
+                <h3 className="nap center">Get In Touch With Us</h3>
             </div>
             <form method="POST">
                 <input type="text" name="name" id="name" value={user.name} onChange={handleInputs} placeholder="Enter Your Name" required/>

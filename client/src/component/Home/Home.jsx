@@ -65,12 +65,10 @@ const Home = () => {
         })
     }
 
-
-
 <hr/>
     
     <section id="client">
-        <h2 class="h-secondary center">Our Social Links</h2>
+        <h2 class="h-secondary center">Follow us on</h2>
         <div class="sponsors">
 
         {

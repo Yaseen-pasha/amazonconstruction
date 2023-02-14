@@ -11,7 +11,7 @@ const Services = () => {
     nav="navbar h-nav"
   />
         <div className="txtsub-container">
-            <h1 className="h-primary center">--OUR SERVICES--</h1>
+            <h1 className="h-primary center">OUR SERVICES</h1>
             <div className="amz center">
                 <div className="slider">
                     <div>Construction of High Rise Buildings</div>

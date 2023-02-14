@@ -9,7 +9,7 @@ const About = () => {
     nav="navbar h-nav"
   />
   <div className="txtsub-container">
-      <h1 className="h-primary center">--ABOUT US--</h1>
+      <h1 className="h-primary center">ABOUT US</h1>
       <div className="main1">
       <Auto
         name1="We Are Expert in This Engineering Services Since 2021."
@@ -29,7 +29,7 @@ const About = () => {
             Construction .</p>
         <hr/>
         <div className="thumb">
-            <h3 className="gap center">----Founder----</h3>
+            <h3 className="gap center">Founder</h3>
             <img src="images/founder1.png" alt="CEO"/>
         </div>
         <div className="founder">

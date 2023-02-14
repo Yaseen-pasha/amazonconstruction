@@ -500,7 +500,7 @@
   z-index: 100;
 }
 .social{
-  height: 41px;
+  height: 30px;
   margin: 8px 7px 10px 7px;
 }
 .social:hover{
@@ -514,6 +514,12 @@
   text-decoration: none;
   margin: 3px;
   color: darkgoldenrod;
+}
+.contact-hr{
+  width: 80%;
+}
+.cont a{
+  text-decoration: none;
 }
 
 
@@ -615,7 +621,7 @@
   display: block;
   }
   .h-secondary {
-      font-size: 18px;
+      font-size: 20px;
   }
   .sponsors img{
       height: 24px;
