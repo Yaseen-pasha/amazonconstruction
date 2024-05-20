@@ -66,13 +66,13 @@ const Contact = () => {
           <Cons
             imgsrc ={"images/phone.svg"}
             alt="address"
-            mob="+918310XXXXXX"
+            mob="+918310902661"
             park="Monday to Friday, 10AM to 4PM"
           />
           <Cons
             imgsrc ={"images/envelope.svg"}
             alt="Email"
-            mob="yaseen@amazonconstruction.com"
+            mob="team@yaseenpasha.com"
             park="Email us to query"
           />
         </div>

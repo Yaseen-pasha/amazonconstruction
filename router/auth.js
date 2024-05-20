@@ -11,4 +11,7 @@ router.post("/contact", (req, res)=>{
         return res.status(400).json({error:"error"});
     });
 });
+// router.get("/", (req, res)=>{
+//         res.status(201).send("Home Page");
+// });
 module.exports = router;
